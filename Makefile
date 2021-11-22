@@ -4,12 +4,12 @@ FLAGS=-Wall -g
 CC=gcc
 AR=ar
 
-all: mat connections 
+all: matrix connections 
  
 connections:main.o libclassmymat.a
 	$(CC) $(FLAGS) -o connections main.o libclassmymat.a
 	
-mat: libclassmymat.a	
+matrix: libclassmymat.a	
 
 libclassmymat.a: my_mat.o   
 	$(AR) -rcs -o libclassmymat.a my_mat.o 
