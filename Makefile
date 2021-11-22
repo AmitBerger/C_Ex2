@@ -8,21 +8,14 @@ all: mat connections
  
 connections:main.o libclassmymat.a
 	$(CC) $(FLAGS) -o connections main.o libclassmymat.a
-
-
+	
 mat: libclassmymat.a	
-
-
 
 libclassmymat.a: my_mat.o   
 	$(AR) -rcs -o libclassmymat.a my_mat.o 
 
-
-
 my_mat.o : my_mat.c my_mat.h
 	$(CC) $(FLAGS) -c my_mat.c 	
-
-
 
 main.o: main.c my_mat.h
 	$(CC) $(FLAGS) -c main.c   
