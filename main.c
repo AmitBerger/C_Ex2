@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdio.h>
 #include "my_mat.h"
 
 int main()
@@ -12,12 +11,12 @@ int main()
     {
         if (user == 'A')
         {
-            func1(mat);
+            foo1(mat);
             
         }
         else if (user == 'B')
         {
-            int ans=func2(mat);
+            int ans=foo2(mat);
             if (ans == 0)
         {
             printf("False");
@@ -32,7 +31,7 @@ int main()
         }
         else if (user == 'C')
         {
-           int ans= func3(mat);
+           int ans= foo3(mat);
            if (ans == 0)
     {
         printf("-1");
@@ -54,3 +53,4 @@ int main()
     }
    return 0;
 }
+
