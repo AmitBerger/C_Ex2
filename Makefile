@@ -1,8 +1,8 @@
-CC=gcc
-AR=ar
 OBJECT_MAIN=main.o
 OBJECT_LIB=NumClass.o
-FLAGS=-Wall -g   
+FLAGS=-Wall -g
+CC=gcc
+AR=ar
 
 all: mat connections 
  
